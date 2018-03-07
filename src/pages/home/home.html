@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+
+ 
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-slides pager="true" parallax="true" padding autoplay="3500" loop="true" speed="500">
+    <ion-slide>
+      <img src="../../assets/img/speakers/bear.jpg"/>
+      <h1>Welcome to my app!</h1>
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/img/speakers/bear.jpg"/>
+      <h1>All of the features</h1>
+      <p>Here's what you can do with the app...</p>
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/img/speakers/bear.jpg"/>
+      <h1>Get started now!</h1>
+      <button ion-button outline small (click)="navHome()">
+        Start using the app
+      </button>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-list-header [hidden]="shownSessions > 0">
+      No Sessions Found
+  </ion-list-header>
+
+  <ion-fab bottom right #fab>
+    <button ion-fab><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+</ion-content>
