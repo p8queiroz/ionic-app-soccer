@@ -12,7 +12,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { ConferenceData } from '../../providers/conference-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
-import { JogadoresPage } from '../jogadores/jogadores';
+//import { JogadoresPage } from '../jogadores/jogadores';
 
 // TODO remove
 export interface ActionSheetButton {
